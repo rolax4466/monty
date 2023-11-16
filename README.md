@@ -187,12 +187,7 @@ Strictly followed `Betty` style guide.
 
 * **Caleb Baraka** - [@Breezekid](https://github.com/breezekid)
 
-* **Rolax cheruiyot** - [@BennettDixon](https://github.com/BennettDixon)
-
-
-## :mag: License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Rolax cheruiyot** - [@rolax4466](https://github.com/rolax4466)
 
 
 ## :mega: Acknowledgments
