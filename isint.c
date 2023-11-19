@@ -15,7 +15,7 @@ int isint(const char *str)
 	if (!*str)
 		return (0);
 
-	while (isdig(*str))
+	while (isdigit(*str))
 		++str;
 
 	return (!*str);

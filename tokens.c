@@ -14,13 +14,13 @@ size_t token_count(const char *string)
 
 	while (*string)
 	{
-		while (space(*string))
+		while (isspace(*string))
 			++string;
 		if (!*string)
 			break;
 		do {
 			++string;
-		} while (*string && !space(*string));
+		} while (*string && !isspace(*string));
 
 		++count;
 	}
@@ -54,7 +54,7 @@ char **tokenise(char *string)
 
 	for (count = 0; *string; count++)
 	{
-		while (space(*string))
+		while (isspace(*string))
 			*string++ = '\0';
 		if (*string)
 			tokens[count] = string;
@@ -62,7 +62,7 @@ char **tokenise(char *string)
 			break;
 		do {
 			++string;
-		} while (*string && !space(*string));
+		} while (*string && !isspace(*string));
 	}
 	tokens[count] = NULL;
 

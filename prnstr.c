@@ -13,7 +13,7 @@ void pstr_op(stack_t **tp)
 	{
 		(*tp)->next->prev = NULL;
 
-		for (p = *sp; p && p->n > 0 && p->n < 128; p = p->prev)
+		for (p = *tp; p && p->n > 0 && p->n < 128; p = p->prev)
 			putchar(p->n);
 
 		(*tp)->next->prev = *tp;

@@ -59,12 +59,13 @@ typedef enum stack_mode_n
  * @mode: Operation mode of stack
  */
 
-typedef struct env_op
+typedef struct env_op_s
 {
 	stack_t *tp;
 	char **argv;
 	char *ln;
 	size_t lns;
+	size_t lno;
 	stack_mode_t mode;
 } t_env_op;
 
@@ -102,19 +103,5 @@ void Perror(const char *format, ...);
 int isint(const char *str);
 void stack_free(stack_t **tp);
 void free_op(void);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #endif /*MONTY_H*/

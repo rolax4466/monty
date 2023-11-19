@@ -10,7 +10,7 @@ void add_op(stack_t **tp)
 	int to_add = 0;
 
 	if (!(*tp && *tp != (*tp)->next))
-		Perror("L%u: can't add, stack too short"\n, env_op.lno);
+		Perror("L%u: can't add, stack too short\n", env_op.lno);
 	to_add = (*tp)->n;
 
 	pop_op(tp);

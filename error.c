@@ -9,7 +9,7 @@
  * Description: Prints message on stderr and exit with status EXIT_FAILURE
  */
 
-void Perror(const char *foramt, ...)
+void Perror(const char *format, ...)
 {
 	va_list args;
 

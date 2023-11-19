@@ -23,14 +23,14 @@ void push_op(stack_t **tp)
 		new->prev = (*tp);
 		new->next = (*tp)->next;
 		new->next->prev = new;
-		(*sp)->next = new;
+		(*tp)->next = new;
 		if (env_op.mode == LIFO)
-			(*sp) = new;
+			(*tp) = new;
 	}
 	else
 	{
 		new->prev = new;
 		new->next = new;
-		(*sp) = new;
+		(*tp) = new;
 	}
 }

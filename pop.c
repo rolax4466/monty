@@ -18,7 +18,7 @@ void pop_op(stack_t **tp)
 	{
 		top = (*tp)->prev;
 		(*tp)->next->prev = top;
-		top->next = (*sp)->next;
+		top->next = (*tp)->next;
 	}
 	free(*tp);
 	*tp = top;

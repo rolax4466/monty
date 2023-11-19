@@ -7,15 +7,15 @@
 
 void pchar_op(stack_t **tp)
 {
-	if (*sp)
+	if (*tp)
 	{
 		if ((*tp)->n > 0 && (*tp)->n < 128)
 			printf("%c\n", (*tp)->n);
 		else
-			pfailure("L%u: can't pchar, value out of range\n", op_env.lno);
+			Perror("L%u: can't pchar, value out of range\n", env_op.lno);
 	}
 	else
-		pfailure("L%u: can't pchar, stack empty\n", op_env.lno);
+		Perror("L%u: can't pchar, stack empty\n", env_op.lno);
 
 
 }

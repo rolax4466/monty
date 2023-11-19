@@ -26,7 +26,7 @@ void stack_free(stack_t **tp)
 
 void free_op(void)
 {
-	stack_free(&op_env.tp);
+	stack_free(&env_op.tp);
 	free(env_op.argv);
 	free(env_op.ln);
 	env_op.argv = NULL;
