@@ -14,7 +14,7 @@ void mod_op(stack_t **tp)
 
 	to_mod = (*tp)->n;
 	if (!to_mod)
-		pfailure("L%u: division by zero\n", op_env.lno);
+		pfailure("L%u: division by zero\n", env_op.lno);
 
 	op_pop(tp);
 

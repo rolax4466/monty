@@ -69,7 +69,7 @@ typedef struct env_op
 } t_env_op;
 
 
-extern t_env_op;
+extern t_env_op env_op;
 
 instruction_fn get_instruction_fn(const char *opcode);
 
@@ -79,8 +79,29 @@ size_t token_count(const char *string);
 void stack_free(stack_t **tp);
 
 
+void add_op(stack_t **tp);
+void div_op(stack_t **tp);
+void mod_op(stack_t **tp);
+void mul_op(stack_t **tp);
+void nop_op(stack_t **tp);
+void pall_op(stack_t **tp);
+void pchar_op(stack_t **tp);
+void pint_op(stack_t **tp);
+void pop_op(stack_t **tp);
+void pstr_op(stack_t **tp);
+void push_op(stack_t **tp);
+void queue_op(stack_t **tp);
+void rotl_op(stack_t **tp);
+void rotr_op(stack_t **tp);
+void stack_op(stack_t **tp);
+void sub_op(stack_t **tp);
+void swap_op(stack_t **tp);
 
 
+void Perror(const char *format, ...);
+int isint(const char *str);
+void stack_free(stack_t **tp);
+void free_op(void);
 
 
 
